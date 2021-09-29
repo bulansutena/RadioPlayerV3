@@ -30,8 +30,8 @@ buttons = [
                 InlineKeyboardButton("❔ HOW TO USE ME ❔", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/SFCorpChannel"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/SFCorpGrup"),
             ],
             [
                 InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
@@ -48,7 +48,7 @@ async def search(client, query):
                 title="Deploy Your Own Radio Player",
                 thumb_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
                 photo_url="https://telegra.ph/file/4e839766d45935998e9c6.jpg",
-                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@AsmSafone | @SafoTheBot 👑</b>",
+                caption=f"{REPLY_MESSAGE}\n\n<b>© Powered By : \n@SFCorpChannel | @SF_Corp_VC_Player_Bot 👑</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
