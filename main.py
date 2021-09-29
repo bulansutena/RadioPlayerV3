@@ -48,7 +48,7 @@ async def main():
     async with bot:
         await mp.start_radio()
         try:
-            await USER.join_chat("AsmSafone")
+            await USER.join_chat("ApanyaDana")
         except UserAlreadyParticipant:
             pass
         except Exception as e:
