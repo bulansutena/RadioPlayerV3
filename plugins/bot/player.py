@@ -567,11 +567,11 @@ async def not_chat(_, m: Message):
     buttons = [
             [
                 InlineKeyboardButton("CHANNEL", url="https://t.me/SFCorpChannel"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SFCorpGrup"),
+                InlineKeyboardButton("GRUP", url="https://t.me/SFCorpGrup"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("👑 MORE BOT 👑", url="https://t.me/SFCorpChannel/8"),
             ]
          ]
-    k=await m.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption="**Sorry, You Can't Use This Bot In This Group! 🤷‍♂️ But You Can Make Your Own Bot Like This From The [Source Code](https://github.com/AsmSafone/RadioPlayerV3) Below 😉!**", reply_markup=InlineKeyboardMarkup(buttons))
+    k=await m.reply_photo(photo="https://telegra.ph/file/4e839766d45935998e9c6.jpg", caption="**Sorry, You Can't Use This Bot In This Group! 🤷‍♂️ But You Can Make Your Own Bot Like This. 😉\n\n[CHAT OWNER](https://t.me/SF_Corp)**", reply_markup=InlineKeyboardMarkup(buttons))
     await mp.delete(m)
