@@ -29,7 +29,7 @@ ADMINS=Config.ADMINS
 playlist=Config.playlist
 LOG_GROUP=Config.LOG_GROUP
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player V3.0** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @AsmSafone 😉!"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **SF Voice Chat Player Bot** \nI Can Play Radio / Music / YouTube Live In Channel & Group 24x7 Nonstop. Made with ❤️ By @SFCorpChannel 😉!"
 HELP_TEXT = """
 💡 --**Setting Up**--:
 
@@ -63,7 +63,7 @@ HELP_TEXT = """
 \u2022 `/setvar` - set/change heroku configs
 
 © **Powered By** : 
-**@AsmSafone | @SafoTheBot** 👑
+**@SFCorpChannel | @SF_Corp_VC_Player_Bot** 👑
 """
 
 
@@ -199,12 +199,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
-            ],
-            [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/SFCorpChannel"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/SFCorpChannel/8"),
+                InlineKeyboardButton("GRUP", url="https://t.me/SFCorpGrup"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -226,12 +223,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
-            ],
-            [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/SFCorpChannel"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/SFCorpChannel/8"),
+                InlineKeyboardButton("GRUP", url="https://t.me/SFCorpGrup"),
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
@@ -261,12 +255,9 @@ async def start(client, message):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
-            ],
-            [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/SFCorpChannel"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/SFCorpChannel/8"),
+                InlineKeyboardButton("GRUP", url="https://t.me/SFCorpGrup"),
             ],
             [
                 InlineKeyboardButton("❔ HOW TO USE ❔", callback_data="help"),
@@ -285,12 +276,9 @@ async def help(client, message):
                 InlineKeyboardButton("SEARCH SONGS INLINE", switch_inline_query_current_chat=""),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
-            ],
-            [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/SFCorpChannel"),
+                InlineKeyboardButton("MORE BOTS", url="https://t.me/SFCorpChannel/8"),
+                InlineKeyboardButton("GRUP", url="https://t.me/SFCorpGrup"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -344,6 +332,6 @@ async def set_heroku_var(client, message):
         await mp.delete(message)
         return
     else:
-        k=await message.reply_text("❗ **You Haven't Provided Any Variable, You Should Follow The Correct Format !** \n\nFor Example: \n• `/setvar CHAT=-1001313215676` to change or set CHAT var. \n• `/setvar REPLY_MESSAGE=` to delete REPLY_MESSAGE var.")
+        k=await message.reply_text("❗ **You Haven't Provided Any Variable, You Should Follow The Correct Format !** \n\nFor Example: \n• `/setvar CHAT=-1001313215676` to change or set CHAT var. \n• `/setvar REPLY_MESSAGE=` to delete REPLY_MESSAGE var. \n• `/setvar ADMINS=1837237310` ID of users who can use admin commands. \n• `/setvar STREAM_URL=` Stream URL of radio station or a youtube live video to stream when the bot starts or with /radio command.")
         await mp.delete(k)
         await mp.delete(message)
