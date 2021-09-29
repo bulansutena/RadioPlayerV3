@@ -31,10 +31,10 @@ buttons = [
             ],
             [
                 InlineKeyboardButton("CHANNEL", url="https://t.me/SFCorpChannel"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SFCorpGrup"),
+                InlineKeyboardButton("GRUP", url="https://t.me/SFCorpGrup"),
             ],
             [
-                InlineKeyboardButton("🤖 MAKE YOUR OWN BOT 🤖", url="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV3"),
+                InlineKeyboardButton("👑 MORE BOT 👑", url="https://t.me/SFCorpChannel/8"),
             ]
          ]
 
